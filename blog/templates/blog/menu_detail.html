@@ -1,0 +1,17 @@
+{%	extends	'blog/base.html'	%}
+{%	block	content	%}
+				<div	class="post">
+  				<div	class="date">
+          	{{	post.register_date	}}
+  				</div>
+								<h1>{{	post.nombre	}}</h1>
+								<h2>{{	post.precio	}}</h2>
+								<h3>{{	post.empleado	}}</h3>
+								<h3>{{	post.cliente	}}</h3>
+								<hr>
+								{% for datos in datos %}
+								<h2>{{	datos.nombre	}}</h2><br>
+								<p>{{	datos.descripcion	}}</p>
+								{% endfor %}
+				</div>
+{%	endblock	%}
